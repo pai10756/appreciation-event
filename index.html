@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>歡迎 - 公益臺北愛心平台感恩會</title>
+
+<!-- OG Meta for LINE -->
+<meta property="og:title" content="公益臺北愛心平台感恩會 紀念相簿">
+<meta property="og:description" content="感謝您的愛心與支持，邀請您瀏覽活動紀念照片">
+<meta property="og:image" content="assets/banner/banner.png">
+<meta property="og:type" content="website">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&family=Noto+Serif+TC:wght@600;700&display=swap" rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" href="styles/variables.css">
+<link rel="stylesheet" href="styles/reset.css">
+<link rel="stylesheet" href="styles/typography.css">
+<link rel="stylesheet" href="styles/layout.css">
+<link rel="stylesheet" href="styles/components.css">
+
+</head>
+<body>
+  <div class="password-page">
+    <div class="password-box">
+      <img src="assets/logo/logo.png" alt="公益臺北愛心平台" class="logo">
+      <h2>公益臺北愛心平台感恩會</h2>
+      <p class="hint">紀念相簿</p>
+      <form id="password-form" data-password="0511">
+        <input
+          type="text"
+          id="password-input"
+          class="password-input"
+          placeholder="請輸入通行密碼"
+          inputmode="numeric"
+          autocomplete="off"
+          maxlength="10"
+        >
+        <button type="submit" class="password-submit">進入相簿</button>
+        <p id="password-error" class="password-error"></p>
+      </form>
+    </div>
+  </div>
+  <script src="js/password-gate.js"></script>
+</body>
+</html>

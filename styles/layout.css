@@ -1,0 +1,65 @@
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+.section {
+  padding: var(--space-3xl) 0;
+}
+
+/* Grid 系統 */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-md);
+}
+
+@media (min-width: 576px) {
+  .photo-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .photo-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-lg);
+  }
+}
+
+/* 首頁分類入口 */
+.category-nav {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+/* 主秀（感謝狀）佔滿寬，次要兩個並排 */
+.category-nav .category-card.featured {
+  grid-column: 1 / -1;
+}
+
+.category-nav .category-cards-secondary {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-lg);
+}
+
+@media (max-width: 575px) {
+  .category-nav .category-cards-secondary {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Flex 工具 */
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
