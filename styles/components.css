@@ -390,9 +390,8 @@
 }
 
 .site-footer .footer-logo {
-  height: 36px;
+  height: 60px;
   margin: 0 auto var(--space-md);
-  filter: brightness(0) invert(1);
 }
 
 .site-footer p {
