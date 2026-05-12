@@ -15,7 +15,7 @@
 }
 
 .site-nav .nav-logo {
-  height: 40px;
+  height: 56px;
   width: auto;
 }
 
@@ -389,9 +389,11 @@
   padding: var(--space-2xl) var(--space-lg);
 }
 
-.site-footer .footer-logo {
-  height: 60px;
-  margin: 0 auto var(--space-md);
+.site-footer .footer-title {
+  font-family: var(--font-heading);
+  font-size: var(--text-lg);
+  font-weight: 600;
+  margin-bottom: var(--space-md);
 }
 
 .site-footer p {
